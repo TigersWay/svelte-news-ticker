@@ -1,0 +1,33 @@
+{
+  "name": "@tigersway/news-ticker",
+  "description": "News ticker or Marquee (Svelte/Web Component/Custom Element)",
+  "keywords": [
+    "svelte",
+    "web-components",
+    "custom-elements"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Ben Michaud <ben@tigersway.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigersway/svelte-news-ticker.git"
+  },
+  "module": "./dist/esm/news-ticker.js",
+  "browser": "./dist/esm/news-ticker.min.js",
+  "svelte": "src/NewsTicker.svelte",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup": "^2.77.2",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.49.0"
+  }
+}
