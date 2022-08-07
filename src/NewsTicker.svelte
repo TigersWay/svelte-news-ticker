@@ -10,7 +10,6 @@
   onMount(() => {
     const nodes = id ? document.getElementById(id).children : document.getElementsByTagName('news-ticker').item(0).children;
     items = [...nodes].map(el => el.innerHTML);
-    console.log(items);
     current = 0;
 
     const interval = setInterval(() => {

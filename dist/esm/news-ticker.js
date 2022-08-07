@@ -625,7 +625,7 @@ function get_each_context(ctx, list, i) {
 	return child_ctx;
 }
 
-// (33:2) {#if i==current}
+// (32:2) {#if i==current}
 function create_if_block(ctx) {
 	let div;
 	let raw_value = /*item*/ ctx[6] + "";
@@ -667,7 +667,7 @@ function create_if_block(ctx) {
 	};
 }
 
-// (32:2) {#each items as item, i}
+// (31:2) {#each items as item, i}
 function create_each_block(ctx) {
 	let if_block_anchor;
 	let current;
@@ -822,7 +822,6 @@ function instance($$self, $$props, $$invalidate) {
 		: document.getElementsByTagName('news-ticker').item(0).children;
 
 		$$invalidate(1, items = [...nodes].map(el => el.innerHTML));
-		console.log(items);
 		$$invalidate(2, current = 0);
 
 		const interval = setInterval(
