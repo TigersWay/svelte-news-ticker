@@ -24,10 +24,6 @@
 </script>
 
 <div class="ticker" bind:this={container}>
-  <!-- <p
-    in:fly="{{ delay: 0, duration: 900, y: 80 }}"
-    out:fly="{{ delay: 0, duration: 600, y: -80 }}"
-  >{@html items[current]}</p> -->
   {#each items as item, i}
   {#if i==current}
   <div
@@ -43,8 +39,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 .5em;
     overflow: hidden;
   }
-  .ticker > div {position: absolute; top: 50%; transform:translateY(-50%);}
+  .ticker > div {position: absolute; top: 50%; transform:translateY(-50%); background-color: pink; margin:0 .4em;}
 </style>

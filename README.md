@@ -38,5 +38,8 @@ import '@tigersway/news-ticker';
 
 ## CHANGELOG
 
+- **v1.0.2**
+  - Added small right margin on the news
+
 - **v1.0.0**
   - First public release
